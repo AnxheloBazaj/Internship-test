@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
+</head>
+
+<body>
+    <div class="d-grid p-10">
+        <div class="item1 p-10 bg-red">
+            <img class="img" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+        </div>
+        <div class="item2 p-10 bg-red">
+            <img class="img" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+        </div>
+        <div class="item3 p-10 bg-red">
+            <img class="img" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+        </div>
+    </div>
+    <div class="d-flex">
+        <div class="d-flex-column-center">
+            <h3 class="wrap-text">TATOO SUPLIES</h3>
+            <img class="w-50" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+            <button type="button" class="btn-blue">Shop now</button>
+        </div>
+        <div class="d-flex-column-center">
+            <h3 class="wrap-text">BODY JEWLERY</h3>
+            <img class="w-50" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+            <button type="button" class="btn-blue">Shop now</button>
+        </div>
+        <div class="d-flex-column-center">
+            <h3 class="wrap-text">PIERCING SUPLIES</h3>
+            <img class="w-50" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+            <button type="button" class="btn-blue">Shop now</button>
+        </div>
+        <div class="d-flex-column-center">
+            <h3 class="wrap-text">MEDICAL SUPLIES</h3>
+            <img class="w-50" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+            <button type="button" class="btn-blue">Shop now</button>
+        </div>
+        <div class="d-flex-column-center">
+            <h3 class="wrap-text">PERMANENT MAKEUP</h3>
+            <img class="w-50 " src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+            <button type="button" class="btn-blue">Shop now</button>
+        </div>
+    </div>
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+                <div class="glide__slide d-flex-column-center">
+                    <img class="img" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+                    <h4 class="txt-blue">$449.99</h4>
+                    <p class="wrap-text">Rook Quill Rotary Tatoo Machine -Cooper</p>
+                </div>
+                <div class="glide__slide d-flex-column-center">
+                    <img class="img" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+                    <h4 class="txt-blue">$449.99</h4>
+                    <p class="wrap-text">Rook Quill Rotary Tatoo Machine -Cooper</p>
+                </div>
+                <div class="glide__slide d-flex-column-center">
+                    <img class="img" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+                    <h4 class="txt-blue">$449.99</h4>
+                    <p class="wrap-text">Rook Quill Rotary Tatoo Machine -Cooper</p>
+                </div>
+                <div class="glide__slide d-flex-column-center">
+                    <img class="img" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+                    <h4 class="txt-blue">$449.99</h4>
+                    <p class="wrap-text">Rook Quill Rotary Tatoo Machine -Cooper</p>
+                </div>
+                <div class="glide__slide d-flex-column-center">
+                    <img class="img" src="../static/images/dummy_400x400_ffffff_cccccc.png" alt="image">
+                    <h4 class="txt-blue">$449.99</h4>
+                    <p class="wrap-text">Rook Quill Rotary Tatoo Machine -Cooper</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left " data-glide-dir="<"><--< /button>
+                    <button class="glide__arrow glide__arrow--right " data-glide-dir=">">--></button>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet " data-glide-dir="=0"></button>
+            <button class="glide__bullet " data-glide-dir="=1">0</button>
+            <button class="glide__bullet " data-glide-dir="=2">0</button>
+            <button class="glide__bullet " data-glide-dir="=3">0</button>
+            <button class="glide__bullet " data-glide-dir="=4">0</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 5,
+            focusAt: 'center',
+            gap: 10,
+            breakpoints: {
+                1200: {
+                    perView: 5
+                },
+                992: {
+                    perView: 3
+                },
+                768: {
+                    perView: 2
+                },
+                576: {
+                    perView: 1
+                }
+            }
+        }).mount();
+    </script>
+
+</body>
+
+</html>
